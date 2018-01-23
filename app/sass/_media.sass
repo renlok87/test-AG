@@ -1,0 +1,64 @@
+
+@import "vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+ /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+ /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  body
+    .sq
+      padding: 0
+    .third
+      display: none
+    grid-template-rows: 1fr
+    grid-template-areas: "header" "second" "first" "forth" "footer"
+    .main-head
+      grid-area: header
+      margin-bottom: 10px
+    .main-footer
+      margin-top: 10px
+      grid-area: footer
+    .first
+      grid-area: first
+    .second
+      grid-area: second
+    .forth
+      grid-area: forth
+    //first-sq
+    .first-w
+      grid-template-columns: 2fr 1fr
+      grid-template-rows: 102.25px 102.25px
+      &__item
+        &:nth-child(1)
+          padding: 20px 5px 0 10px
+          overflow-y: auto
+    //second-sq
+    .second-w
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 155px 155px 155px
+      grid-template-areas: 'people test' 'conf conf' 'int people2'
+    //forth-sq
+    .forth-w
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 155px 155px 155px
+      grid-template-areas: 'how how' 'dot vector' 'lead gen'
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
+
+
